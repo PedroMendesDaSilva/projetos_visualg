@@ -17,9 +17,15 @@ Var
    a:real
    b:real
    c:real
+   dolar:real
+   brl:real
+   euro:real
+   resultado:real
+   cm:real
+   metro:real
 
 
-Inicio
+inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
 
    escreval(" _____________________")
@@ -35,6 +41,7 @@ Inicio
    escreval("2- cálculo de área de triângulo")
    escreval("3- cálculo do raio do círculo")
    escreval("4- cálculo de bhaskara")
+   escreval("5- conversores")
    escreval()
    escreva("Opção:")
    leia(menu)
@@ -89,7 +96,7 @@ Inicio
       escreval("Area: ",area)
 
    caso 4
-   
+
       escreval("Vou fazer a fórmula de bhaskara")
       escreval("para isso, preciso de algumas informações:")
       escreva("a: ")
@@ -108,7 +115,88 @@ Inicio
       escreva("x2: ")
       escreval(x2)
 
- outrocaso
+   caso 5
+      escreval(" _______________")
+      escreval("|               |")
+      escreval("|  Conversores  |")
+      escreval("|_______________|")
+      escreval()
+      escreval("1- Brl pra Dólar")
+      escreval("2- Dólar pra Brl")
+      escreval("3- Euro pra Brl")
+      escreval("4- Real pra Euro")
+      escreval("5- Cm para Metro")
+      escreval("6- Metro pra Cm")
+      escreval()
+      escreva("opção: ")
+      leia(menu)
+
+      escolha(menu)
+
+      caso 1
+         escreval("Vou fazer a conversão")
+         escreval("mas para isso preciso de algumas informações")
+         escreva("Brl: ")
+         leia(brl)
+         resultado <- brl*5.35
+         escreval("segue abaixo os resultados:")
+         escreva("resultado: ")
+         escreva(resultado)
+      caso 2
+         escreval("Vou fazer a conversão")
+         escreval("mas para isso preciso de algumas informações")
+         escreva("dolar: ")
+         leia(dolar)
+         resultado <- dolar*0.19
+         escreval("segue abaixo os resultados:")
+         escreva("resultado: ")
+         escreva(resultado)
+      caso 3
+         escreval("Vou fazer a conversão")
+         escreval("mas para isso preciso de algumas informações")
+         escreva("euro: ")
+         leia(euro)
+         resultado <- euro*5.78
+         escreval("segue abaixo os resultados:")
+         escreva("resultado: ")
+         escreva(resultado)
+
+      caso 4
+         escreval("Vou fazer a conversão")
+         escreval("mas para isso preciso de algumas informações")
+         escreva("brl: ")
+         leia(brl)
+         resultado <- brl*0.17
+         escreval("segue abaixo os resultados:")
+         escreva("resultado: ")
+         escreva(resultado)
+      caso 5
+         escreval("Vou fazer a conversão")
+         escreval("mas para isso preciso de algumas informações")
+         escreva("cm: ")
+         leia(metro)
+         resultado <- metro*0.01
+         escreval("segue abaixo os resultados:")
+         escreva("resultado: ")
+         escreva(resultado)
+      caso 6
+         escreval("Vou fazer a conversão")
+         escreval("mas para isso preciso de algumas informações")
+         escreva("metro: ")
+         leia(cm)
+         resultado <- cm*100
+         escreval("segue abaixo os resultados:")
+         escreva("resultado: ")
+         escreva(resultado)
+
+      outrocaso
+         escreval("opção inválida")
+      fimescolha
+
+
+
+
+   outrocaso
       //opcção inválida
       escreval("opção inválida")
 
